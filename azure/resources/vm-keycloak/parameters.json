@@ -25,6 +25,19 @@
                         "destinationAddressPrefix": "*",
                         "destinationPortRange": "22"
                     }
+                },
+                {
+                    "name": "KeycloakServer",
+                    "properties": {
+                        "protocol": "*",
+                        "sourcePortRange": "*",
+                        "destinationPortRange": "8080",
+                        "sourceAddressPrefix": "*",
+                        "destinationAddressPrefix": "*",
+                        "access": "Allow",
+                        "priority": 310,
+                        "direction": "Inbound"
+                    }
                 }
             ]
         },

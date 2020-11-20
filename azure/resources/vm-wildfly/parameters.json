@@ -25,6 +25,32 @@
                         "destinationAddressPrefix": "*",
                         "destinationPortRange": "22"
                     }
+                },
+                {
+                    "name": "WildflyServer",
+                    "properties": {
+                        "protocol": "TCP",
+                        "sourcePortRange": "*",
+                        "destinationPortRange": "8080",
+                        "sourceAddressPrefix": "*",
+                        "destinationAddressPrefix": "*",
+                        "access": "Allow",
+                        "priority": 310,
+                        "direction": "Inbound"
+                    }
+                },
+                {
+                    "name": "WildflyConsole",
+                    "properties": {
+                        "protocol": "TCP",
+                        "sourcePortRange": "*",
+                        "destinationPortRange": "9990",
+                        "sourceAddressPrefix": "*",
+                        "destinationAddressPrefix": "*",
+                        "access": "Allow",
+                        "priority": 320,
+                        "direction": "Inbound"
+                    }
                 }
             ]
         },
