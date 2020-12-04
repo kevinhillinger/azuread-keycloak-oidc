@@ -1,3 +1,6 @@
+
+azure/keys/*.pem
+
 # Compiled class file
 *.class
 

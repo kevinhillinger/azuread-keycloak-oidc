@@ -103,3 +103,8 @@ sudo systemctl status wildfly --no-pager
 #sudo tail -f /opt/wildfly/standalone/log/server.log
 
 # done
+
+# configuration
+echo Adding Management Console binding...
+sudo /opt/wildfly/bin/add-user.sh
+

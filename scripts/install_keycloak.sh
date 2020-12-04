@@ -73,13 +73,16 @@ sudo systemctl status keycloak --no-page
 
 
 
-admin_password=P@ssword1
+admin_password='<define admin password>'
+
 {
     sudo /opt/keycloak/bin/add-user-keycloak.sh -r master -u azureuser -p $admin_password
     sudo systemctl restart keycloak
 }
+
 {
     sudo /opt/keycloak/bin/kcadm.sh config credentials --server http://localhost:8080/auth --realm master --user azureuser –-password $admin_password
     sudo /opt/keycloak/bin/kcadm.sh update realms/master -s sslRequired=NONE
 }
+
 # access at http://<instance-public-ip>:8080/auth/

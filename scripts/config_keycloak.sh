@@ -1,6 +1,6 @@
 
 admin=azureuser
-admin_password=P@ssword1
+admin_password='<define admin password here>'
 
 ./kcadm.sh config credentials --server http://localhost:8080/auth --realm master --user $admin --password $admin_password
 
